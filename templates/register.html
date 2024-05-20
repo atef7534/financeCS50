@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %}
+    Registeration
+{% endblock %}
+{% block main %}
+    <form action="/register" method="post">
+        <div class="mb-3 w-50 m-auto">
+            <label for="username" class="form-label">User Name</label>
+            <input type="text" class="form-control" id="username" name="username" autofocus="" autocomplete="off" placeholder="Name">
+        </div>
+        <div class="mb-3 w-50 m-auto">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" autofocus="" autocomplete="off" placeholder="password">
+        </div>
+        <div class="mb-3 w-50 m-auto">
+            <label for="confirmation" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmation" name="confirmation" autofocus="" autocomplete="off" placeholder="confirm password">
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+{% endblock %}
